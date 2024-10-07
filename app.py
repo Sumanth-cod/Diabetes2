@@ -11,7 +11,7 @@ scaler = pickle.load(open("scaler.pkl", "rb"))
 
 # Define the home page route
 @app.route('/')
-def home():
+def index():
     return render_template("index.html")
 
 # Define the predict route for form submission
